@@ -1,0 +1,138 @@
+/* Jairo._. */
+
+body {
+    background-color: rgb(54, 54, 54);
+}
+
+#primeiro_bloco {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#segundo_bloco {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagem_de_login {
+    margin-top: 90px;
+    height: 300px;
+    width: 300px;
+}
+
+#inserir_flex {
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-bottom: -10px;
+    width: auto;
+    height: auto;
+}
+
+#login {
+    font-family: Arial;
+    font-size: 50pt;
+    color: rgb( 255, 255, 255);
+}
+
+#nome {
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    padding: 7px;
+    width: 400px;
+    background-image: url(../Images/botaoeinput.png);
+    background-repeat: no-repeat;
+    background-size: 450px 60px;
+    font-size: 10pt;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+#email_do_usuario {
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 7px;
+    width: 400px;
+    background-image: url(../Images/botaoeinput.png);
+    background-repeat: no-repeat;
+    background-size: 450px 60px;
+    font-size: 10pt;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+#confirmar_email {
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 7px;
+    width: 400px;
+    background-image: url(../Images/botaoeinput.png);
+    background-repeat: no-repeat;
+    background-size: 450px 60px;
+    font-size: 10pt;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+#cpf {
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 7px;
+    width: 400px;
+    background-image: url(../Images/botaoeinput.png);
+    background-repeat: no-repeat;
+    background-size: 450px 60px;
+    font-size: 10pt;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+#enviar {
+    margin-top: 20px;
+    margin-top: 40px;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    width: 420px;
+    outline: none;
+    background-image: url(../Images/botaoeinput.png);
+    font-family: Arial;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+}
+
+#enviar:hover {
+    background-image: url(../Images/animacao.png);
+}
+
+#crash {
+    margin-top: 40px;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+}
+#erro {
+    margin: 0px;
+    padding: 2px;
+    height: auto;
+    width: auto;
+}

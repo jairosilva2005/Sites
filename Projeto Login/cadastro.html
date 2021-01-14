@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Jairo._. -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style_cadastro.css">
+    <link rel="icon" href="./Images/logo_login.png">
+    <title>Cadastre-se</title>
+</head>
+<script>
+    function digitando_cpf() {
+        var cpf = document.querySelector('input#cpf')
+        var email_v = document.querySelector('input#email_do_usuario')
+        var email_c = document.querySelector('input#confirmar_email')
+        var email_len = email_v.length
+        var email_lan = email_c.length
+        if (cpf.value.length == 3 || cpf.value.length == 7) {
+            cpf.value += "."
+        }
+        else if (cpf.value.length == 11) {
+            cpf.value += "-"
+        }
+    }
+</script>
+
+<body>
+    <section id="inserir_flex">
+        <div id="primeiro_bloco" align="center">
+            <img src="./Images/logo_login.png" alt="imagem_de_login" id="imagem_de_login">
+        </div>
+        <div id="segundo_bloco" align="center">
+            <form id="formulario" align="center">
+                <p id="login">Cadastro</p>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" autocomplete="off">
+                <br>
+                <input type="email" name="email_do_usuario" id="email_do_usuario" autocomplete="off"
+                    placeholder="Seu Email" maxlength="256">
+                <br>
+                <input type="email" name="confirmar_email" id="confirmar_email" placeholder="Confirme seu Email"
+                    maxlength="256" onkeydown="digitando_email()" autocomplete="off">
+                <br>
+                <input type="text" name="cpf" id="cpf" onkeyup="digitando_cpf()" maxlength="14" autocomplete="off"
+                    placeholder="Seu CPF">
+                <br>
+                <input type="submit" value="Cadastre-se" id="enviar" onclick="cadastrar()">
+                <br>
+                <div id="crash">
+                    <input type="checkbox" name="aceito[]" id="concordancia"> Eu li e aceito os termos | <a class="link" href="#">Ler Termo de Liçenca</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
