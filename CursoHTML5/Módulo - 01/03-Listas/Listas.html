@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas - HTML</title>
+  </head>
+  <body>
+    <!-- Listas como o próprio nome sugere, serve para listar coisas -->
+    <h1>Listas - HTML</h1>
+    <h2>Lista não ordenada</h2>
+    <ul>
+      <li>Primeiro Elemento da lista</li>
+      <li>Segundo Elemento da lista</li>
+      <li>Terceiro Elemento da lista</li>
+    </ul>
+    <h2>Lista ordenada</h2>
+    <ol>
+      <li>Primeiro Elemento da lista</li>
+      <li>Segundo elemento da lista</li>
+      <li>Terceiro elemento da lista</li>
+      <li>
+        <ol>
+          <li>Lista dentro de uma lista</li>
+          <li>Lista dentro de uma lista</li>
+        </ol>
+      </li>
+    </ol>
+    <h2>Lista de descrição</h2>
+    <dl>
+      <dt>One</dt>
+      <dd>Significa Um em inglês</dd>
+      <dt>Two</dt>
+      <dd>Significa Dois em inglês</dd>
+      <dt>Three</dt>
+      <dd>Significa três em inglês</dd>
+    </dl>
+  </body>
+  <!--
+
+    - Elementos
+    Para criar elementos dentro das listas se usa li, a formatação será de acordo com o tipo de lista
+    que você está usando...
+
+    - Lista não ordenada
+    Para listas não ordenadas se usa ul, o resultado será o valor do elemento com um ponto na atrás
+    
+    - Lista ordenada
+    Para listas ordenadas se usa ol, o resultado será mais ou menos parecido com isso:
+    1. Primeiro elemento da lista
+    2. Segundo elemento da lista
+    3. Terceiro elemento da lista
+
+    Na tag ol podemos inserir um parâmetro chamado type, onde você pode utilizar alguns parâmetros para
+    trocar os números que estabelecem o índice da tabela, como por exemplo [A, a, 1] por exemplo ->
+    <ol type="A">
+        <li> Primeiro elemento da lista </li>
+        <li> Segundo elemento da lista </li>
+        <li> Terceiro elemento da lista </li>
+    </ol>
+    também podemos incluir uma lista dentro de outra - segue o exemplo
+    <ol>
+        <li>
+            <ol>
+                <li> Lista dentro de uma lista </li>
+            </ol>
+        </li>
+    </ol>
+
+    - O resultado será mais parecido com:
+    A. Primeiro Elemento da lista
+    B. Segundo Elemento da lista
+    C. Terceiro Elemento da lista
+
+    - Também podemos colocar o parâmetro I, no caso será em algarismo romano
+    I. Primeiro Elemento da lista
+    II. Segundo Elemento da lista
+    III. Terceiro Elemento da lista
+    IV. Quarto Elemento da lista
+  -->
+</html>

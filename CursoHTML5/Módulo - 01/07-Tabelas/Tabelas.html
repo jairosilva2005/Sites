@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas - HTML</title>
+    <style>
+      table,
+      caption,
+      tr,
+      th,
+      td {
+        border: solid 2px rgb(44, 44, 44);
+        background-color: rgb(252, 252, 252);
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      .Nome {
+        background-color: rgb(255, 75, 75);
+      }
+      .Email {
+        background-color: rgb(101, 206, 118);
+      }
+      .Telefone {
+        background-color: rgb(48, 124, 224);
+      }
+      .Cargo {
+        background-color: rgb(240, 209, 108);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Cadastro de Clientes
+      </caption>
+      <!--
+      <colgroup>
+        <col class="Nome">
+        <col class="Email">
+        <col class="Telefone">
+        <col class="Cargo">
+      </colgroup>
+    -->
+      <thead>
+        <tr>
+          <th class="Nome">Nome:</th>
+          <!-- th's são títulos -->
+          <th class="Email">Email:</th>
+          <th class="Telefone">Telefone:</th>
+          <th class="Cargo">Cargo:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="Nome">Jairo</td>
+          <!-- td's são conteúdos -->
+          <td class="Email">JairoSilva@gmail.com</td>
+          <td class="Telefone">(85) 982068852</td>
+          <td rowspan="2" class="Cargo">Desenvolvedor Front-end</td>
+        </tr>
+        <tr>
+          <td class="Nome">Jair</td>
+          <!-- td's são conteúdos -->
+          <td class="Email">JairLuid@gmail.com</td>
+          <td class="Telefone">(85) 992830183</td>
+        </tr>
+        <tr>
+          <td class="Nome">Josyane</td>
+          <!-- td's são conteúdos -->
+          <td class="Email">Josy2021@gmail.com</td>
+          <td class="Telefone">(85) 919283913</td>
+          <td class="Cargo">Desenvolvedor Full-stack</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="Nome">Total de Clientes: 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <!--
+     A tag table é usada para criar tabelas, e junto com ela você pode atribuir uma legenda
+     com a tag caption
+
+     - Atributo colspan
+     Serve para dizer quantas colunas o elemento irá abrigar
+
+     - Atributo Rowspan
+     Serve para dizer quantas linhas o elemento irá  abrigar
+ -->
+</html>
