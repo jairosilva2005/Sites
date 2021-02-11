@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Map - HTML </title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map - HTML</title>
+  </head>
+  <body>
+    <h1>O mapa e os elementos de área</h1>
+
+    <p>
+      Clique no computador, no celular, ou no copo de café para saber mais sobre
+      esse tópico
+    </p>
+
+    <img
+      src="workplace.jpg"
+      alt="Workplace"
+      usemap="#workmap"
+      width="400"
+      height="379"
+    />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="computer.htm"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="phone.htm"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Cup of coffee"
+        href="coffee.htm"
+      />
+    </map>
+  </body>
+  <!-- 
+      A tag map serve para adicionar locais de links em partes específicas de uma imagem
+   -->
 </html>
