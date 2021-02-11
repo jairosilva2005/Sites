@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários - HTML</title>
+  </head>
+  <body>
+    <form action="cadastro.php" method="POST">
+      <fieldset>
+        <legend>Realizar login</legend>
+        <label>Nome: </label> <br />
+        <!-- Inputs do tipo texto aceitam qualquer tipo de caractere -->
+        <input
+          type="text"
+          name="Nome"
+          id="Nome"
+          autocomplete="off"
+          required
+          maxlength="15"
+        /><br />
+        <label>Escreva sua mensagem</label> <br />
+        <textarea
+          name="Mensagem"
+          id="Mensagem"
+          cols="75"
+          rows="30"
+          spellcheck="false"
+        ></textarea>
+        <br />
+        <!-- Inputs do tipo email possuem uma auto validação então mesmo tendo essa validação é preciso validar as informações antes de enviar para o banco de dados-->
+        <label>Email</label> <br />
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          autocomplete="off"
+          required
+        />
+        <br />
+        <label>Time:</label> <br />
+        <input type="radio" name="Time" id="Vasco" value="Vasco" /> Vasco |
+        <input
+          type="radio"
+          name="Time"
+          id="Flamengo"
+          value="Flamengo"
+          checked
+        />
+        Flamengo |
+        <input type="radio" name="Time" id="Corinthians" value="Corinthians" />
+        Corinthians <br />
+        <!-- Inputs do tipo checkbox são bem parecidos com o do tipo rádio -->
+        <label>Cores:</label> <br />
+        <input type="checkbox" name="Vermelho" id="Vermelho" /> Vermelho |
+        <input type="checkbox" name="Preto" id="Preto" /> Preto |
+        <input type="checkbox" name="Azul" id="Azul" checked /> Azul <br />
+        <label>Idade:</label> <br />
+        <input
+          type="number"
+          name="Idade"
+          id="Idade"
+          min="0"
+          max="120"
+          step="2"
+          required
+        />
+        <br />
+        <!-- o input do tipo range é utilizado para campos de entrada que devem receber um valor a partir de uma variação de números -->
+        <label>Range: </label> <br />
+        <input
+          type="range"
+          name="Quantidade"
+          id="Quantidade"
+          min="0"
+          max="100"
+          step="10"
+        />
+        <br />
+        <label>Color: </label> <br />
+        <input type="color" name="Cor" id="Cor" />
+        <br />
+        <label>Arquivo: </label> <br />
+        <input type="file" name="Arquivo" id="" />
+        <br />
+        <!-- Inputs do tipo URL servem para passar links de internet -->
+        <label>URL: </label> <br />
+        <input type="url" name="URL" id="URL" />
+        <br />
+        <!-- inputs do tipo search são muito usados para procurar coisa em sites - do mesmo jeito que é feito na documentação de linguagens -->
+        <label>Search: </label> <br />
+        <input type="search" name="Procurar" id="Procurar" />
+        <br />
+        <!-- Inputs do tipo tel servem para passar números de telefone por meio de um input específico(que é o próprio input tel) -->
+        <label>Telefone: </label> <br />
+        <input type="tel" name="URL" id="URL" />
+        <br />
+        <!-- Inputs do tipo date servem para passar datas para serem processadas e armazenadas -->
+        <label>Data: </label> <br />
+        <input type="date" name="Data" id="Data" min="2000-05-12" />
+        <br />
+        <!-- Do mesmo jeito do input de tipo data, tipo hora recebe a hora digitada pelo usuário -->
+        <label>Hora: </label> <br />
+        <input type="time" name="Hora" id="Hora" />
+        <br />
+        <!-- O input do tipo month  recebe o mês e o ano que o usuário inserir -->
+        <label>Mês e ano: </label> <br />
+        <input type="month" name="Mes-ano" id="Mes-ano" />
+        <br />
+        <!-- O input de tipo week recebe a semana que o usuário inserir -->
+        <label>Semana: </label> <br />
+        <input type="week" name="Semana" id="Semana" />
+        <br />
+        <label>Data e hora: </label> <br />
+        <input type="datetime" name="Data-hora" id="Data-hora" />
+        <br />
+        <label>Selecione o Curso: </label> <br />
+        <input name="Cursos" list="Lista-Cursos" />
+        <datalist id="Lista-Cursos">
+          <option value="CSS"></option>
+          <option value="HTML"></option>
+          <option value="JS"></option>
+        </datalist>
+
+        <br />
+        <label>Selecione: </label> <br />
+        <select name="Select" id="Select">
+          <optgroup label="Primeiras">
+            <option value="PO">Primeira Opção</option>
+            <option value="SO">Segunda Opção</option>
+          </optgroup>
+          <optgroup label="Segundas">
+            <option value="TO" selected>Terceira Opção</option>
+            <option value="QO">Quarta Opção</option>
+          </optgroup>
+        </select>
+        <br />
+        <!-- Inputs do tipo password recebem qualquer tipo de email só que esse tipo não mostra os caracteres que estão sendo inseridos -->
+        <label>Senha: </label> <br />
+        <input
+          type="password"
+          name="Senha"
+          id="Senha"
+          autocomplete="off"
+          required
+        />
+        <br />
+        <!-- Inputs do tipo submit servem para vedar e enviar as informações para serem processadas no arquivo PHP -->
+        <input type="submit" name="btn-enviar" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+  <!--
+        A tag form serve para a criação de formulários no arquivo PHP ou HTML
+      
+        - Tag fieldset
+        A tag fieldset é usada para agrupar elementos relacionados em um formulário.
+        A tag fieldset desenha uma caixa ao redor dos elementos relacionados.
+        A tag legend é usada para definir uma legenda para o elemento fieldset
+
+        - Atributo required
+        O atributo required (usado nos inputs) serve para deixar tal elemento obrigatório
+
+        - Atributo autofocus
+        O atributo autofocus (usado nos inputs) serve para deixar um campo selecionado assim que 
+        o usuário entrar na página
+
+        - Atributo disabled
+        O atributo disabled (usado nos inputs) serve para desabilitar certo campo de input
+        fazendo com que o usuário não consiga atribuir dados ao input
+
+        - Atributo maxlength (usado nos inputs) serve para atribuir um limite de caracteres ao campo
+        seja ele numérico ou tipo texto
+
+        - Atributo checked
+        O atributo checked (usado nos inputs de tipo radio e checkbox) serve para estabelecer um valor padrão
+        se seleção das opções, é meio que um default
+
+        - Atributo min, max e step
+        O atributo min, max e step (usado nos inputs de tipo number) estabelece um limite máximo e um limite mínimo
+        de valores, já o atributo step atribui como permitido somentes valores múltiplos de x, exemplo:
+        step="2" só aceita valores múltiplos de 2
+
+        - Atributo autocomplete
+        O atributo autocomplete é usado para desligar ou ligar a sugestão de resposta que seu browser oferece
+
+        - Atributo placeholder
+        O atributo placeholder é usado para colocar uma legenda dentro do input de qualquer tipo(que seja 
+        descrito pelo usuário)
+
+        - Input Hidden
+        Inputs do tipo hidden serve para passa parâmetros para arquivos PHP ou JavaScript
+        <input type="hidden" name="Dado">
+
+        - Atributo spellcheck
+        O atributo spellcheck serve para desligar o corretor automático em um textarea fazendo com que ele
+        não exiba erros ortográficos
+
+        - Diferença entre input do tipo botton e tag botton
+        input do tipo bottom só pode ser um botão, mas uma tag do tipo botton pode definir um texto como link
+        uma foto ou qualquer outro elemento da página
+
+        - Atributo selected
+        O atributo selected (usado nas options de select) deixam uma opção como padrão, tipo uma espécie
+        de default
+      -->
+</html>

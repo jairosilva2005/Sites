@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark e contenteditable</title>
+    <style>
+      #main {
+        background-color: cadetblue;
+        color: #000;
+        padding: 20px;
+      }
+      mark {
+        padding: 3px;
+      }
+      #two {
+          background-color: cadetblue;
+          margin-top: 30px;
+          padding: 20px;
+          display: flex;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #fff;
+      }
+
+      p {
+          outline-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <p>
+        <mark>Lorem ipsum dolor sit amet</mark> consectetur, adipisicing elit.
+        Ex, fugit explicabo? Minima nemo, dolorum dolores repellat corrupti
+        voluptatum explicabo eligendi quam eveniet, sunt assumenda quis, quasi
+        ipsum ipsa ut ullam? Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. A nemo cupiditate, ea explicabo, accusamus est nulla quidem
+        obcaecati dolore <mark>deserunt nesciunt perspiciatis</mark> tempora veritatis
+        odio minima similique quasi modi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. A deleniti harum impedit provident quidem est
+        doloremque? Vitae atque fuga et beatae accusantium illum tempora
+        assumenda necessitatibus repudiandae voluptatum, exercitationem minus.
+      </p>
+    </div>
+    <div id="two">
+        <h1 class="title"> Você pode editar esse texto! </h1>
+        <br />
+        <p class="edit" contenteditable>Clique aqui para começar a editar :O</p>
+    </div>
+  </body>
+    <!-- 
+        A tag mark serve para destacar um texto em outra tag de parágrafo ou qualquer outra tag que envolva textos
+        A tag contenteditable serve para deixar um elemento editável, seja uma div ou qualquer tag que envolva textos
+    -->
+</html>

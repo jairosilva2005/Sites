@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários 2 - HTML</title>
+  </head>
+  <body>
+    <form method="GET" id="Login">
+      <fieldset>
+        <legend>Login</legend>
+        <input type="email" name="Email" id="Email" autocomplete="off" />
+        <input
+          type="submit"
+          name="cadastrar"
+          value="Cadatrar"
+          formmethod="GET"
+          formaction="cadastrar.php"
+          formnovalidate
+        />
+        <input
+          type="submit"
+          name="enviar-por-email"
+          value="Enviar por email"
+          formaction="enviar-por-email.php"
+          formmethod="GET"
+        />
+      </fieldset>
+    </form>
+
+    <!-- Você consegue referenciar um input fora de um form para passar os dados ao formulário -->
+    <input type="text" name="Nome" id="Nome" form="Login" autocomplete="off" />
+  </body>
+  <!--
+    - Atributos finais de formulários
+    
+    - formaction="example.php"
+    Serve para você enviar dados para páginas diferentes, meio que um formulário com
+    duas opções
+    
+    - formmethod="GET"
+    Serve para você especificar o método de envio de dados no input, sendo ele GET ou POST
+
+    - form="id-do-form"
+    Serve para especificar a qual formulário o input pertence, você também pode usar um input
+    do tipo button com um formaction para fazer um envio do formulário de maneira separada
+
+    - formnovalidate
+    Serve para deixar o formulário sem validação, ou seja, você pode colocar qualquer coisa nos inputs
+    e até o browser não irá acusar nenhum erro, esse atributo é usado nos inputs de tipo submit
+
+    - formenctype
+    Serve para impor uma codificação de caracteres ao envio do formulário
+
+    - formtarget="_blank"
+    Envia o formulário para uma nova aba/janela no browser
+  -->
+</html>

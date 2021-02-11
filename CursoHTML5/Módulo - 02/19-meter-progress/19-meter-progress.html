@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meter Progress - HTML</title>
+    <style>
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Barra de medição normal</h3>
+    <meter min="0" low="3" optimus="5" high="10" max="15" value="0.5"></meter>
+    <br />
+    <h3>Barra de medição em 50%</h3>
+    <br />
+    <meter value="0.5"></meter> <br />
+    <h3>Barra de progresso</h3>
+    <br />
+    <progress max="100" value="35"></progress>
+  </body>
+  <!-- 
+      A tag meter meio que faz um medidor que você pode usar para fazer qualquer tipo de coisa
+      seja medir algum uso de serviço ou algo do tipo
+
+      A tag progress faz uma linha de progresso, como a de um Download por exemplo, a medição de
+      ambos é feita ultilizando porcentagem
+   -->
+</html>
