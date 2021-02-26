@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- 
+        Feito por: Jairo Silva
+        github: https://github.com/jairosilva2005
+        Data: 21/02/2021
+    -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tela de Login - Jairo Silva</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Container de redes sociais -->
+      <div class="hello">
+        <h1>Sign in With</h1>
+        <br />
+        <!-- Botões de redes -->
+        <div class="social-media">
+          <button id="facebook-social">
+            <img
+              src="./images/icon-facebook.png"
+              alt="Facebook-icon"
+              width="100px"
+            />
+          </button>
+          <button id="google-social">
+            <img
+              src="./images/icon-google.png"
+              alt="Google-icon"
+              width="100px"
+            />
+          </button>
+        </div>
+      </div>
+      <!-- Fim do container de redes sociais -->
+      <!-- Formulário de envio -->
+      <form action="#" method="post" class="data-input">
+        <h5 class="labels-form">Username</h5>
+        <br />
+        <input
+          type="text"
+          name="username"
+          class="inputs-form"
+          autocomplete="off"
+          maxlength="100"
+        />
+        <br />
+        <h5 class="labels-form">
+          Password <a href="#" class="links">Forgot?</a>
+        </h5>
+        <br />
+        <input
+          type="password"
+          name="password"
+          class="inputs-form"
+          maxlength="12"
+        />
+        <br />
+        <button type="submit" class="submit-form">Sign in</button>
+      </form>
+      <!-- Fim do formulário -->
+      <div class="notlogin">
+        <h4>Not a member? <a href="#" class="links">Sign up now</a></h4>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+html, body {
+    /* background-image: linear-gradient(rgb(75, 222, 255), rgb(255, 86, 249)); */
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("../images/background-main.jpg");
+    background-size: cover;
+}
+
+/* Formatação do container Geral */
+.container {
+    background-color: #ffffff;
+    padding: 30px 5rem 30px 5rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Formatação da DIV de redes sociais */
+.hello {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Botões de redes sociais */
+#facebook-social {
+    background-color: #415995;
+    text-align: right;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+    border-top: 1px solid #2e406e;
+    border-left: 1px solid #2e406e;
+    border-right: 3px solid #2e406e;
+    border-bottom: 3px solid #2e406e;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#google-social {
+    background-color: #ffffff;
+    text-align: right;
+    color: #000000;
+    border-top: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+    border-right: 3px solid #c8c8c8;
+    border-bottom: 3px solid #c8c8c8;
+    border-radius: 10px;
+    padding: 15px 40px 15px 40px;
+    margin-top: 10px;
+    transition: 350ms;
+}
+
+/* Efeito botão nos botões de redes sociais */
+#google-social:hover {
+    border-top: 1px solid #9c9c9c;
+    border-left: 1px solid #9c9c9c;
+    border-right: 3px solid #9c9c9c;
+    border-bottom: 3px solid #9c9c9c;
+    cursor: pointer;
+}
+
+#facebook-social:hover {
+    border-top: 1px solid #1b3984;
+    border-left: 1px solid #1b3984;
+    border-right: 3px solid #1b3984;
+    border-bottom: 3px solid #1b3984;
+    cursor: pointer;
+}
+
+
+/* Formatação dos formulários */
+.data-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.inputs-form {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.labels-form {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 3px;
+    font-size: 10pt;
+}
+
+.submit-form {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.submit-form:hover {
+    background-color: #545454;
+    cursor: pointer;
+}
+
+/* Formatação - Opções de Cadastro */
+.notlogin {
+    text-align: center;
+}
+
+.links {
+    color: #9c9c9c;
+    transition: 400ms;
+}
+
+.links:hover {
+    color: #656565;
+}
+
+
+/*padding: 15px 40px 15px 40px;
+    Hexadecimal logo facebook: #415995
+    Hexadecimal logo Google: #ffffff
+    Hexadecimal do botão: #333333
+    Hexadecimal inputs: #f7f7f7
+*/
