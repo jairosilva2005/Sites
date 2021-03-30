@@ -30,6 +30,7 @@ body, html {
     width: 200px;
     color: #000;
     outline: none;
+    transition-delay: 500ms;
 }
 #Button:hover {
     background-image: linear-gradient(to right,  rgb(255, 55, 55),  rgb(255, 206, 73));
